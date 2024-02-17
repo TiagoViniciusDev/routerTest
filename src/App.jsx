@@ -14,10 +14,11 @@ function App() {
       <HashRouter>
         <Routes>
           <Route path='/' element={<Layout />}>
-            <Route index element={<Home />}/>
+            <Route index path='/' element={<Home />}/>
             <Route path='/sobre' element={<Sobre />}/>
             <Route path='/contato' element={<Contato />}/>
           </Route>
+          <Route path='*' element={<h2>ERROR</h2>}></Route>
         </Routes>
       </HashRouter>
     </div>
