@@ -11,7 +11,6 @@ function App() {
 
   return (
     <div className='App'>
-      <HashRouter>
         <Routes>
           <Route path='/' element={<Layout />}>
             <Route index path='/' element={<Home />}/>
@@ -20,7 +19,6 @@ function App() {
           </Route>
           <Route path='*' element={<h2>ERROR</h2>}></Route>
         </Routes>
-      </HashRouter>
     </div>
   )
 }
